@@ -417,8 +417,8 @@ int net__socket_listen(struct mosquitto__listener *listener)
 #else
 	char ss_opt = 1;
 #endif
-#ifdef WITH_TLS
 	int rc;
+#ifdef WITH_TLS
 	X509_STORE *store;
 	X509_LOOKUP *lookup;
 	ENGINE *engine = NULL;
